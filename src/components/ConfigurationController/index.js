@@ -3,7 +3,7 @@ import ConfigurationContext from '../../context/ConfigurationContext'
 
 import './index.css'
 
-const ConfigurationContext = () => (
+const ConfigurationController = () => (
   <ConfigurationContext.Consumer>
     {value => {
       const {
