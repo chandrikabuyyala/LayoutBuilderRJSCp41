@@ -3,7 +3,7 @@ import Header from '../Header'
 import Footer from '../Footer'
 import Body from '../Body'
 
-import '.index.css'
+import './index.css'
 
 const Layout = () => (
   <div className="layout_container">
