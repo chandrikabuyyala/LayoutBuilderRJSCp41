@@ -22,6 +22,7 @@ class App extends Component {
   onToggleShowLeftNavbar = () => {
     this.setState(prevState => ({showLeftNavbar: !prevState.showLeftNavbar}))
   }
+  
   onToggleShowRightNavbar = () => {
     this.setState(prevState => ({showRightNavbar: !prevState.showRightNavbar}))
   }
@@ -30,7 +31,7 @@ class App extends Component {
     const {showContent, showLeftNavbar, showRightNavbar} = this.state
 
     return (
-      <ConfigurationContext.provider
+      <ConfigurationContext.Provider
         value={{
           showContent,
           showLeftNavbar,
@@ -44,7 +45,7 @@ class App extends Component {
           <ConfigurationController />
           <Layout />
         </div>
-      </ConfigurationContext.provider>
+      </ConfigurationContext.Provider>
     )
   }
 }
